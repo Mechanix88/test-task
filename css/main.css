@@ -53,6 +53,30 @@ a {
   height: 100%;
 }
 
+.promotions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1150px) {
+  .promotions {
+    align-items: center;
+  }
+}
+
+.promotions__wraper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1150px) {
+  .promotions__wraper {
+    justify-content: center;
+  }
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -241,6 +265,47 @@ td, th {
   padding: 0;
 }
 
+.banner-right__bg {
+  height: 100%;
+  width: 100%;
+  max-height: 294px;
+  cursor: pointer;
+}
+
+.banner-right__img {
+  width: 100%;
+}
+
+.banner-right {
+  position: relative;
+}
+
+.button {
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+  background-color: #ff0072;
+  padding: 15px 16px;
+  display: block;
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  border: none;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #CD0074;
+}
+
+.button--absolute {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+}
+
 .title {
   color: #000000;
   font-family: "Proxima Nova";
@@ -254,37 +319,12 @@ td, th {
   }
 }
 
-.promotions {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-@media screen and (max-width: 1150px) {
-  .promotions {
-    align-items: center;
-  }
-}
-
-.promotions__wraper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1150px) {
-  .promotions__wraper {
-    justify-content: center;
-  }
-}
-
 .banner-left {
   display: flex;
   background-image: url("./../image/bg/banner-1-bg.jpg");
   padding: 12px 25px 12px 15px;
   max-height: 294px;
   max-width: 564px;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1150px) {
@@ -323,6 +363,7 @@ td, th {
 .banner-left__img {
   padding-right: 40px;
   position: relative;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 580px) {
@@ -388,31 +429,6 @@ td, th {
   border-right: none;
 }
 
-.button {
-  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
-  background-color: #ff0072;
-  padding: 15px 16px;
-  display: block;
-  font-family: inherit;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  border: none;
-  transition: 1s;
-}
-
-.button:hover {
-  background-color: #CD0074;
-}
-
-.button--absolute {
-  position: absolute;
-  right: 5%;
-  bottom: 8%;
-}
-
 .banner-left__price-value {
   color: #ff0072;
   font-family: "Proxima Nova";
@@ -446,19 +462,4 @@ td, th {
   display: block;
   position: absolute;
   transform: rotate(6deg);
-}
-
-.banner-right__bg {
-  height: 100%;
-  width: 100%;
-  max-height: 294px;
-  cursor: pointer;
-}
-
-.banner-right__img {
-  width: 100%;
-}
-
-.banner-right {
-  position: relative;
 }
