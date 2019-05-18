@@ -1,0 +1,129 @@
+.title
+    color: #000000
+    font-family: "Proxima Nova"
+    font-size: 40px
+    font-weight: 400
+    @media screen and (max-width: 1150px)
+        text-align: center
+
+.banner-left
+    display: flex
+    background-image: url("./../image/bg/banner-1-bg.jpg")
+    padding: 12px 25px 12px 15px
+    max-height: 294px
+    max-width: 564px
+    cursor: pointer
+    @media screen and (max-width: 1150px)
+        margin-bottom: 40px
+    @media screen and (max-width: 580px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-height: 100%
+        max-width: 100%
+
+.banner-left__title
+    color: #000000
+    font-size: 31px
+    font-weight: 700
+    line-height: 1
+    margin-top: 10px
+    margin-bottom: 15px
+
+.banner-left__timeleft
+    color: #000000
+    font-size: 16px
+    font-weight: 600
+    margin-bottom: 14px
+    min-width: 300px
+
+.banner-left__img
+    padding-right: 40px
+    position: relative
+    @media screen and (max-width: 580px)
+        padding-right: 0px
+        display: flex
+        justify-content: center
+    &:after
+        content: ""
+        background-image: url("./../image/img/banner-content-2.png")
+        width: 106px
+        height: 119px
+        position: absolute
+        right: -5px
+        top: -10px
+        @media screen and (max-width: 580px)
+            right: 15px
+
+.banner-left__timer-row
+    display: flex
+    justify-content: space-around
+    margin-top: 5px
+
+.banner-left__timer-desc
+    color: #000000
+    font-family: "Proxima Nova"
+    font-size: 16px
+    font-weight: 600
+   
+    
+    
+.banner-left__timer-group
+    display: flex
+    color: #000000
+    font-family: Umnik
+    font-size: 55px
+    font-weight: 700
+    border-radius: 10px
+    background-color: #ffffff
+    margin-right: 20px
+    flex: 1
+    &:last-child
+        margin-right: 0
+        
+
+.banner-left__timer-field
+    border-right: 2px dashed #fbb100
+    padding-right: 5px
+    padding-left: 10px
+    
+.border--disable
+    border-right: none
+
+.banner-left__price-value
+    color: #ff0072
+    font-family: "Proxima Nova"
+    font-size: 36px
+    font-weight: 700
+    line-height: 1
+
+.banner-left__more
+    display: flex
+    align-items: center
+
+.banner-left__price-sale
+    color: #000000
+    font-size: 16px
+    font-weight: 600
+    text-transform: uppercase
+    position: relative
+    line-height: 1
+    &:before
+        content: ""
+        width: 64px
+        height: 2px
+        background-color: #ff0072
+        border-radius: 3px
+        left: -5px
+        top: 7px
+        display: block
+        position: absolute
+        transform: rotate(6deg)
+
+
+
+
+
+        
+
+    

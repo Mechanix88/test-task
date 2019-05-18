@@ -1,0 +1,37 @@
+*
+    box-sizing: border-box
+
+
+html, body 
+    height: 100%
+    width: 100%
+    font-family: "Proxima Nova"
+
+img
+	max-height: 100% 
+	
+a 
+    text-decoration: none
+    
+    
+.conteiner
+    max-width: 1250px
+    margin: 0 auto
+    padding-left: 10px
+    padding-right: 10px
+    overflow: hidden
+    height: 100%
+
+.promotions
+    display: flex
+    justify-content: center
+    flex-direction: column
+    @media screen and (max-width: 1150px)
+        align-items: center
+
+.promotions__wraper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @media screen and (max-width: 1150px)
+        justify-content: center
